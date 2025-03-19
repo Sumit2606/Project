@@ -20,7 +20,8 @@ jobs:
         username: ubuntu
         key: ${{ secrets.EC2_PRIVATE_KEY }}
         script: |
-          cd /home/ubuntu/nodejs-app
-          git pull origin develop
+          cd /home/ubuntu/myass
+          git pull https://github.com/Sumit2606/Project.git
           npm install
-          pm2 restart node-app
+          sudo npm install -g pm2
+          pm2 restart server.js
