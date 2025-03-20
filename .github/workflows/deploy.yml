@@ -20,7 +20,7 @@ jobs:
         username: ubuntu
         key: ${{ secrets.EC2_PRIVATE_KEY }}
         script: |
-          cd /home/ubuntu/myass
+          cd /home/ubuntu/myassesment
           git pull https://github.com/Sumit2606/Project.git
           npm install
           sudo npm install -g pm2
