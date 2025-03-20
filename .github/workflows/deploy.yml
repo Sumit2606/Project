@@ -25,3 +25,6 @@ jobs:
           npm install
           sudo npm install -g pm2
           pm2 restart server.js
+          pm2 save
+          pm2 startup
+
