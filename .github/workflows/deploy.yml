@@ -23,9 +23,6 @@ jobs:
           cd /home/ubuntu/myassesment
           git pull https://github.com/Sumit2606/Project.git
           npm install
-          sudo npm install -g pm2
-          pm2 kill
-          pm2 start server.js
+          pm2 restart server.js || pm2 start server.js
           pm2 save
-          pm2 startup
 
